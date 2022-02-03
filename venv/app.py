@@ -32,5 +32,6 @@ if len(states.states) != 0:
     print(states.states[0].velocity)
 
     r = requests.post(url = URL, params = PARAMS)
+    print(r.content)
 else:
     print("Der Flug wurde nicht gefunden :/")

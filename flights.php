@@ -24,7 +24,9 @@
 
 <body>
     <?php
-/*         if (array_key_exists('location', $_POST)) {
+    echo print_r($_POST);
+    echo "<br>";
+        if (array_key_exists('location', $_POST)) {
                 fetchFlight();
             }
         else{
@@ -32,8 +34,7 @@
             $log_file_name = 'flights.log';
             $flightlist = fread($myfile, filesize("flights.log"));
             file_put_contents($log_file_name, $flightlist.'recieved stuff');
-        } */
-            fetchFlight();
+        }
         
         function fetchFlight(){
             $velocity = $_POST['velocity'];
